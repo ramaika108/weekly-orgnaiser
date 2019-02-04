@@ -1,0 +1,6 @@
+structure of database:
+{
+year
+    month
+        date + week day
+}
