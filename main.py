@@ -12,10 +12,20 @@ months = [
 ['November', 30],
 ['December', 31] ]
 
-table = {2019: []}
-for i in range(12): #this loop creates the
-    print(str(months[i,0]))
-    table[2019] = months[i,0] #table[months[i][0]] = list(range(months[i][1]))
+table = {}
 
-print(table)
-print(range(0,30))
+sellected_day = ('January',1)
+
+for i in range(12): #this loop creates the
+    table[months[i][0]] = list(range(1,months[i][1]+1)) #table[months[i][0]] = list(range(months[i][1]))
+
+
+
+def create_task():
+    #table['January'][-1] = 'last var' 
+    #table[sellected_day[0]][sellected_day[1]] = 'last var' 
+    print(table[sellected_day[0]][sellected_day[1]]-1)
+
+create_task()
+
+#print(table)
